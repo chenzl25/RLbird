@@ -1,0 +1,22 @@
+[project]
+name = "flappy-rl-tutorial"
+version = "0.1.0"
+description = "Learn RL by training a simple Flappy Bird agent with PyTorch"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.26",
+  "pygame>=2.6",
+  "torch>=2.3",
+  "tqdm>=4.66",
+]
+
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+package = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/flappy_rl_tutorial"]
