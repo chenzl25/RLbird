@@ -48,6 +48,23 @@ uv run python -m flappy_rl_tutorial.train \
   --model-out dqn_flappy_m1_v2.pt
 ```
 
+Run with checkpoint output (your command):
+
+```bash
+uv run python -m flappy_rl_tutorial.train \
+  --episodes 3500 \
+  --max-steps 3000 \
+  --batch-size 128 \
+  --lr 0.0007 \
+  --eps-start 1.0 \
+  --eps-end 0.02 \
+  --eps-decay-steps 3000 \
+  --target-update-interval 20 \
+  --log-every 50 \
+  --model-out dqn_flappy_m1_v2.pt \
+  --checkpoint-out dqn_flappy_m1_v2_checkpoint.pt
+```
+
 Why this is better:
 
 - in this trainer, epsilon decays per episode, so `--eps-decay-steps 3000` reaches low exploration much sooner
