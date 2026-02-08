@@ -14,7 +14,7 @@ This is a hands-on tutorial to learn reinforcement learning (RL) by training a s
 From this folder:
 
 ```bash
-cd /Users/dylan/Desktop/playground/RL/flappy_rl_tutorial
+cd /Users/dylan/Desktop/playground/RL
 uv sync
 ```
 
